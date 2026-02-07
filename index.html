@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parsa's Portfolio</title>
+    <title>Parsa's Website</title>
     <style>
-        /* CSS for the Look */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f0f2f5;
@@ -13,7 +12,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            min-height: 100vh;
+            height: 100vh;
             margin: 0;
             color: #2d3436;
         }
@@ -25,22 +24,14 @@
             text-align: center;
             max-width: 400px;
             width: 90%;
-            margin-bottom: 20px;
         }
         h1 { color: #0984e3; margin-bottom: 10px; }
-        p { color: #636e72; line-height: 1.6; }
-        
-        .skills-list {
-            text-align: left;
-            display: inline-block;
-            margin-top: 15px;
-        }
+        p { color: #636e72; line-height: 1.6; margin-bottom: 25px; }
         
         .btn {
             display: inline-block;
-            margin-top: 25px;
-            padding: 12px 25px;
-            background-color: #00b894;
+            padding: 12px 30px;
+            background-color: #0984e3;
             color: white;
             text-decoration: none;
             border-radius: 8px;
@@ -49,12 +40,10 @@
             font-weight: bold;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
         .btn:hover {
-            background-color: #55efc4;
+            background-color: #74b9ff;
             transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
         }
     </style>
 </head>
@@ -64,34 +53,13 @@
         <h1>Welcome!</h1>
         <p>I am <strong>Parsa</strong>, a coding enthusiast exploring Python and Web Development.</p>
         
-        <div class="skills-list">
-            <strong>🚀 My Skills:</strong>
-            <ul>
-                <li>Python Basics (Variables & If/Else)</li>
-                <li>GitHub Pages Hosting</li>
-                <li>Basic HTML5 & CSS3</li>
-            </ul>
-        </div>
-
-        <br>
-        <button onclick="greetUser()" class="btn">Click for a Surprise!</button>
+        <button onclick="exploreAction()" class="btn">Explore</button>
     </div>
 
     <script>
-        function greetUser() {
-            const hour = new Date().getHours();
-            let message;
-
-            // Using the same logic as Python's If/Else
-            if (hour < 12) {
-                message = "Good Morning! ☀️ Hope you have a productive day.";
-            } else if (hour < 18) {
-                message = "Good Afternoon! ☕ Coding is going great!";
-            } else {
-                message = "Good Evening! 🌙 Time to relax or build something cool!";
-            }
-
-            alert(message);
+        function exploreAction() {
+            // Simple logic for the Explore button
+            alert("Welcome to the exploration phase! Stay tuned for more updates.");
         }
     </script>
 
