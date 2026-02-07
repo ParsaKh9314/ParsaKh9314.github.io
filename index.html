@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parsa's Website</title>
+    <title>Parsa's Project</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -30,7 +30,7 @@
         
         .btn {
             display: inline-block;
-            padding: 12px 30px;
+            padding: 12px 35px;
             background-color: #0984e3;
             color: white;
             text-decoration: none;
@@ -49,7 +49,7 @@
 </head>
 <body>
 
-    <div class="container">
+    <div id="main-content" class="container">
         <h1>Welcome!</h1>
         <p>I am <strong>Parsa</strong>, a coding enthusiast exploring Python and Web Development.</p>
         
@@ -57,9 +57,22 @@
     </div>
 
     <script>
+        // Logic to check location (similar to Python if/else)
+        fetch('https://ipapi.co/json/')
+            .then(response => response.json())
+            .then(data => {
+                if (data.country_code === 'US') {
+                    // Replace content if user is from USA
+                    document.getElementById('main-content').innerHTML = `
+                        <h1 style="color: #d63031;">Access Denied</h1>
+                        <p>Sorry, this content is not available in your region.</p>
+                    `;
+                }
+            })
+            .catch(err => console.log("Location check failed, proceeding..."));
+
         function exploreAction() {
-            // Simple logic for the Explore button
-            alert("Welcome to the exploration phase! Stay tuned for more updates.");
+            alert("You are now exploring the site!");
         }
     </script>
 
