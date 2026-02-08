@@ -8,7 +8,6 @@
         /* Modern Clean Theme */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            /* A nice warm light gray background */
             background-color: #f4f7f6; 
             display: flex;
             align-items: center;
@@ -39,8 +38,7 @@
         .btn {
             display: inline-block;
             padding: 16px 50px;
-            /* Your Blue Button */
-            background-color: #007bff;
+            background-color: #007bff; /* Blue */
             color: white;
             text-decoration: none;
             border-radius: 50px;
@@ -48,15 +46,14 @@
             font-size: 1.1rem;
             font-weight: bold;
             cursor: pointer;
-            /* Smooth transition for hover effects */
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
             box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
         }
         
-        /* Your Requested Effect: Large & Lighter */
+        /* Your Updated Effect: Large & Darker */
         .btn:hover {
-            transform: scale(1.1); /* Gets larger */
-            opacity: 0.75;         /* Gets lighter/pale blue */
+            transform: scale(1.1);    /* Gets larger */
+            filter: brightness(0.85); /* Gets darker/deeper blue */
             box-shadow: 0 8px 25px rgba(0, 123, 255, 0.4);
         }
     </style>
@@ -72,7 +69,7 @@
 
     <script>
         function exploreAction() {
-            alert("Perfect choice! This background makes the blue button pop.");
+            alert("Now the button gets darker and larger! Looks great.");
         }
     </script>
 
