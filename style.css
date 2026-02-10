@@ -50,6 +50,5 @@ p {
 /* Updated Effect: Large & Lighter */
 .btn:hover {
     transform: scale(1.1);    /* Gets larger */
-    opacity: 0.7;             /* Gets lighter (lower opacity) */
     box-shadow: 0 8px 25px rgba(0, 123, 255, 0.4);
 }
