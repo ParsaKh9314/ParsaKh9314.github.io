@@ -1,0 +1,55 @@
+/* Modern Clean Theme - External Stylesheet */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    background-color: white;
+    padding: 3rem;
+    border-radius: 24px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    max-width: 400px;
+    width: 85%;
+}
+
+h1 {
+    color: #2d3436;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+p {
+    color: #636e72;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 16px 50px;
+    background-color: #007bff; /* Blue */
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+/* Updated Effect: Large & Lighter */
+.btn:hover {
+    transform: scale(1.1);    /* Gets larger */
+    opacity: 0.7;             /* Gets lighter (lower opacity) */
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.4);
+}
