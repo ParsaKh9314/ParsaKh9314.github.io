@@ -1,10 +1,13 @@
 function exploreAction() {
-    // This is like a 'print' and 'if' in Python
-    const currentTime = new Date().toLocaleTimeString();
+    // Finding the element by its ID
+    const messageElement = document.getElementById('display-message');
     
-    alert("Styles and Scripts are now separated!\n" + 
-          "Current time: " + currentTime + "\n" +
-          "The button is now larger and lighter on hover.");
-          
-    console.log("Button was clicked at " + currentTime);
+    // This is like a Python variable assignment
+    const status = "You clicked the button! Logic is working.";
+    
+    // Changing the text on the screen
+    messageElement.innerHTML = status;
+
+    // Optional: Log it in the browser console (Press F12 to see)
+    console.log("Status updated!");
 }
