@@ -52,3 +52,7 @@ p {
     transform: scale(1.1);    /* Gets larger */
     box-shadow: 0 8px 25px rgba(0, 123, 255, 0.4);
 }
+#display-message {
+    min-height: 20px;
+    transition: all 0.5s ease;
+}
